@@ -43,7 +43,11 @@
             </li>
           </ul>
         </nav>
-
+        <button class="btn-menu-open" data-menu-open>
+          <svg width="32" height="22" class="icon-menu-open">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+          </svg>
+        </button>
         <address class="contacts">
           <ul class="contacts-list list">
             <li class="contacts-item">
@@ -60,6 +64,15 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu-container container">
+          <button class="btn-menu-close" data-menu-close>
+            <svg class="icon-menu-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -132,7 +145,11 @@
           <ul class="products-list list">
             <li class="products-item">
               <img
-                src="./images/products-img1.jpg"
+                srcset="
+                  ./images/products-img1-1x.jpg 1x,
+                  ./images/products-img1-2x.jpg 2x
+                "
+                src="./images/products-img1-1x.jpg"
                 alt="monitor"
                 width="360"
                 class="products-img"
@@ -140,7 +157,11 @@
             </li>
             <li class="products-item">
               <img
-                src="./images/products-img2.jpg"
+                srcset="
+                  ./images/products-img2-1x.jpg 1x,
+                  ./images/products-img2-2x.jpg 2x
+                "
+                src="./images/products-img2-1x.jpg"
                 alt="touchscreen"
                 width="360"
                 class="products-img"
@@ -148,7 +169,11 @@
             </li>
             <li class="products-item">
               <img
-                src="./images/products-img3.jpg"
+                srcset="
+                  ./images/products-img3-1x.jpg 1x,
+                  ./images/products-img3-2x.jpg 2x
+                "
+                src="./images/products-img3-1x.jpg"
                 alt="mobitel"
                 width="360"
                 class="products-img"
@@ -157,7 +182,7 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <!-- <section class="team">
         <div class="team-container container">
           <h2 class="team-tittle">Our Team</h2>
           <ul class="team-list list">
@@ -323,8 +348,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="customers">
+      </section> -->
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -372,9 +397,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="logo-wrap">
           <a class="footer-logo link" href="./index.html"
@@ -436,7 +461,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -522,6 +547,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
